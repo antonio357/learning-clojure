@@ -12,10 +12,6 @@
 
 ;; -- ENVIROMENT AND INTERNAL CLOJURE FUNCTIONALITIES
 
-;; use repl to quick test closure code
-;; repl stands for read-eval-print-loop and is a console for clojure "just like console in network for javascript" so that u can run and test a clojure code 
-;; to run repl go to a terminal then execute lein repl
-
 ;; how clojure works
 ;; clojure has no interpreter
 ;; clojure code is compiled by the JDK from the java in the enviroment
@@ -37,7 +33,20 @@
 ;; - funções de primeira classe e funções de alta ordem
 ;; funções que podem receber funções como parametro e retornar funções além de armazenar funções em veriáveis
 
+
+;; -- setup clojure
+
+;; use repl to quick test closure code
+;; repl stands for read-eval-print-loop and is a console for clojure "just like console in network for javascript" so that u can run and test a clojure code 
+;; to run repl go to a terminal then execute lein repl
+
+;; para executar um .clj no terminal coloque #!/usr/bin/env clojure na primeira linha do .clj garanta premissão de execução para o arquivo e depois execute no terminal ./*.clj
+
+;; https://www.youtube.com/watch?v=6uUynWkMDGM&ab_channel=onthecodeagain
+
+
 ;; -- LINKS
+
 ;;- topicos gerais, https://www.youtube.com/watch?v=ciGyHkDuPAE&ab_channel=DerekBanas
 ;;- clojure com web introdução rápida do setup, https://www.youtube.com/watch?v=MQmdWSh2FG4&ab_channel=BetweenTwoParens
 ;;- setup do vscode para clojure, Developer Ergonomics with VS Code, Clojure, and ClojureScript by Peter Strömberg
