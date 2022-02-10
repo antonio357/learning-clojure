@@ -21,17 +21,21 @@
 ;; clojure code is compiled by the JDK from the java in the enviroment
 ;; the bytecode generated is executed by th JVM from the java in the enviroment
 
-;; -- FUNCIONAL PROGRAMMING https://www.youtube.com/watch?v=BWFpUHPqh1g&ab_channel=DevMedia
+;; -- PROGRAMAÇÂO FUNCIONAL https://www.youtube.com/watch?v=BWFpUHPqh1g&ab_channel=DevMedia
 
 ;; - funções inpuras
-;; funções que tem a possibilidade de retornar valores diferentes para os mesmos parametros, exemplo uma função que calcula a área de um circulo e para isso utiliza o valor pi global, eoricamente a função deveria retornar sempre o mesmo valor para o parametro raio dado, porém como alguém pode mexer no valor de pi e alteralo, isso faz com que a função passe a calular novos valores para os mesmos raios anteriores passados por parámetro
+;; funções que tem a possibilidade de retornar valores diferentes para os mesmos parametros, exemplo uma função que calcula a área de um circulo e para isso utiliza o valor pi global, teoricamente a função deveria retornar sempre o mesmo valor para certo parametro raio dado, porém como alguém pode mexer no valor de pi e alteralo fazendo com que a função passe a calular novos valores para os mesmos raios anteriores passados por parámetro
 ;; - funções puras
-;; funções que se para os mesmos parametros retornam os memsmo resultados 
-;; immutability
-;; confiabilidade
-;; otimizações de performance, referencial transparence (técnica lá de programação dinámica)
-;; funções de primeira classe 
-;; funções de alta ordem
+;; funções que se para os mesmos parametros retornam os mesmos resultados sempre sem possibilidade de fatores externos influenciarem nesses resultados 
+;; - imutabilidade
+;; dada uma função de aplicar desconto a um pagamento, ao receber o pagamento como parametro ao em vez de fazer pagamento = pagamento - desconto e acabar modificando o pagamento o que causa inconsisténcia nos dados do pagamento, para manter a consistência/imutabilidade dos dados a função deve receber pagamento como uma constante criar uma nova instância de pagamento e nesse instáncia aplicar o desconto e retornando esse novo pagamento   
+;; - confiabilidade
+;; com funções puras fica mais confiavel e estável criar testes automatizados, a previsibilidade dos comportamentos do codigo é bem maior com funções puras
+;; como os dados são imutáveis e consistentes eles podem ser compartilhados por execuções paralelas de forma segura  
+;; - otimizações de performance
+;; através de referencial transparence (técnica lá de programação dinámica), se em uma função para tais parametros o resultado é sempre o mesmo podemos armazenar esses resultados e quando a função for chamada como esses parametros já memorizados, ao em vez de exercutar toda função novamente só pegamos o valor que temos armazenado e retornamos
+;; - funções de primeira classe e funções de alta ordem
+;; funções que podem receber funções como parametro e retornar funções além de armazenar funções em veriáveis
 
 ;; -- LINKS
 ;;- topicos gerais, https://www.youtube.com/watch?v=ciGyHkDuPAE&ab_channel=DerekBanas
