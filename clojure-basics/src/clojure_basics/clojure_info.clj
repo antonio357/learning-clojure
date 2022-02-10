@@ -34,7 +34,10 @@
 ;; funções que podem receber funções como parametro e retornar funções além de armazenar funções em veriáveis
 
 
-;; -- setup clojure
+;; -- FULL CLOJURE course https://www.youtube.com/watch?v=IxSUAVmhg40&list=PLqunUpREWrwKdi3DEkTnIia54JjnWk8JB&ab_channel=onthecodeagain 
+
+
+;; -- STUP CLOJURE
 
 ;; use repl to quick test closure code
 ;; repl stands for read-eval-print-loop and is a console for clojure "just like console in network for javascript" so that u can run and test a clojure code 
