@@ -46,13 +46,13 @@ open command palette and run
 <img src="https://github.com/antonio357/learning-clojure/blob/main/readmeImgs/command-palett-to-run-clojure-1.png"><img>  
 then choose  
 <img src="https://github.com/antonio357/learning-clojure/blob/main/readmeImgs/command-palett-to-run-clojure-2.png"><img>  
-then select and click in ok  
+then select uberjar and click in ok  
 <img src="https://github.com/antonio357/learning-clojure/blob/main/readmeImgs/command-palett-to-run-clojure-3.png"><img>  
 on the right will appear the `output.calva-repl` tab   
 <img src="https://github.com/antonio357/learning-clojure/blob/main/readmeImgs/command-palett-to-run-clojure-4.png"><img>  
 click/select on a line of code in any .clj file   
 <img src="https://github.com/antonio357/learning-clojure/blob/main/readmeImgs/command-palett-to-run-clojure-5.png"><img>  
-then press ctrl + enter keybinding to run the code and check its return on the right after the => symbol  
+then press `ctrl + enter` keybinding to run the code and check its return on the right after the => symbol  
 <img src="https://github.com/antonio357/learning-clojure/blob/main/readmeImgs/command-palett-to-run-clojure-6.png"><img>  
 on the `output.calva-repl` tab will appear  
 output  
