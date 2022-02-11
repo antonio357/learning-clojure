@@ -2,7 +2,7 @@
 This repo its meant to save exemples and explanations about programming in clojure.  
 Disclaimer: All done in Ubuntu based distribution
 ## setting up clojure enviroment
-> install `brew` and `vscode` 
+> install `brew`, `vscode` and `JDK with JAVA_HOME` 
 
 > in a terminal run `brew install clojure lein`  
 
