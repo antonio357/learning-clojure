@@ -50,11 +50,12 @@
 
 ;; -- LINKS
 
-;;- topicos gerais, https://www.youtube.com/watch?v=ciGyHkDuPAE&ab_channel=DerekBanas
-;;- clojure com web introdução rápida do setup, https://www.youtube.com/watch?v=MQmdWSh2FG4&ab_channel=BetweenTwoParens
-;;- setup do vscode para clojure, Developer Ergonomics with VS Code, Clojure, and ClojureScript by Peter Strömberg
-;;- tipos em clojure, https://www.youtube.com/watch?v=BWcAn0Utdd0&ab_channel=O%27Reilly-VideoTraining
-;;- introdução a clojure, https://www.youtube.com/watch?v=mPn486kxUlQ&ab_channel=ProgramandoComRoger
-;;- mini projeto em clojure, https://www.youtube.com/watch?v=HKydOMGTCxE&ab_channel=Filhodanuvem
-;;- setup clojure em 5 minutos, https://www.youtube.com/watch?v=4BA1Od_d9Qw&ab_channel=NotJustCode
+;; - topicos gerais, https://www.youtube.com/watch?v=ciGyHkDuPAE&ab_channel=DerekBanas
+;; - clojure com web introdução rápida do setup, https://www.youtube.com/watch?v=MQmdWSh2FG4&ab_channel=BetweenTwoParens
+;; - setup do vscode para clojure, Developer Ergonomics with VS Code, Clojure, and ClojureScript by Peter Strömberg
+;; - tipos em clojure, https://www.youtube.com/watch?v=BWcAn0Utdd0&ab_channel=O%27Reilly-VideoTraining
+;; - introdução a clojure, https://www.youtube.com/watch?v=mPn486kxUlQ&ab_channel=ProgramandoComRoger
+;; - mini projeto em clojure, https://www.youtube.com/watch?v=HKydOMGTCxE&ab_channel=Filhodanuvem
+;; - setup clojure em 5 minutos, https://www.youtube.com/watch?v=4BA1Od_d9Qw&ab_channel=NotJustCode
 ;; - codumentação do clojure, https://clojure.org/guides/learn/syntax
+;; - https://www.tutorialspoint.com/clojure/clojure_variables.htm
