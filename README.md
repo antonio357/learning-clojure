@@ -41,5 +41,5 @@ and <a href="https://marketplace.visualstudio.com/items?itemName=betterthantomor
 ## how to run clojure
 in a terminal run `lein new my-cloruje-project`  
 open my-cloruje-project dir with vscode
-inside vscode open command palette and run  <img src="https://github.com/antonio357/learning-clojure/blob/main/readmeImgs/command-palett-to-run-clojure-1.png" style="height: 100px; width:100px;"><img>
+inside vscode open command palette and run  <img src="https://github.com/antonio357/learning-clojure/blob/main/readmeImgs/command-palett-to-run-clojure-1.png"><img>
 ## clojure's aspects 
