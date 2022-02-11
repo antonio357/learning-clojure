@@ -26,6 +26,8 @@
 (- -1 3) 
 ;; now recursively call subtraction again, passing the result of the previous subtraction (- 1 2) with the next parameter 3, output -4
 
+(mod 5 4)
+
 ;; type, will give the type of anything
 (type 5N)
 (type 5/6)
