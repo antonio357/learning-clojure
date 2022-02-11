@@ -48,7 +48,8 @@ then choose
 <img src="https://github.com/antonio357/learning-clojure/blob/main/readmeImgs/command-palett-to-run-clojure-2.png"><img>  
 then select uberjar and click in ok  
 <img src="https://github.com/antonio357/learning-clojure/blob/main/readmeImgs/command-palett-to-run-clojure-3.png"><img>  
-on the right will appear the `output.calva-repl` tab   
+
+> on the right will appear the `output.calva-repl` tab   
 <img src="https://github.com/antonio357/learning-clojure/blob/main/readmeImgs/command-palett-to-run-clojure-4.png"><img>  
 click/select on a line of code in any .clj file   
 <img src="https://github.com/antonio357/learning-clojure/blob/main/readmeImgs/command-palett-to-run-clojure-5.png"><img>  
