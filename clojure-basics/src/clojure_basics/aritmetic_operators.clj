@@ -26,7 +26,34 @@
 (- -1 3) 
 ;; now recursively call subtraction again, passing the result of the previous subtraction (- 1 2) with the next parameter 3, output -4
 
-(mod 5 4)
+;; remainer of division, mod and rem
+(rem 3 2)
+(mod 3 2)
+;; WARNNING: (rem - +) returns - but (rem + -) returns + 
+(rem -3 2) 
+(rem 3 -2)  
+;; WARNNING: (mod - +) returns + but (mod + -) returns -  
+(mod -3 2)
+(mod 3 -2)
+;; WARNNING: (mod - -) returns - and (rem - -) returns -
+(mod -3 -2)
+(rem -3 -2)
+;; WARNNING: for the given the problems listed above use quot instead
+;; (quot + +) returns +, (quot + -) returns -, (quot - +) returns -, (quot - -) returns +,
+(quot 3 2)
+(quot 3 -2)
+(quot -3 2)
+(quot -3 -2)
+;; WARNNING: but if u need remainer of num / num do not use quot, cause (quot num num) returns 1
+(quot 1 1)
+(quot -1 -1)
+
+
+(inc 1) ;; in C 1++
+(dec 1) ;; in C1--
+
+(max 1 2 3)
+(min -1 -2 -3)
 
 ;; type, will give the type of anything
 (type 5N)
