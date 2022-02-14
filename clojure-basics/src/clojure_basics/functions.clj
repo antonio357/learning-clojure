@@ -13,7 +13,7 @@
 )
 (pow2 2)
 
-;; anonimous functions can be created with fn
+;; anonimous functions can be created with fn and it can be assigned to a variable using def
 (def sub (fn [a b] (- a b)))
 (sub 1 2)
 
