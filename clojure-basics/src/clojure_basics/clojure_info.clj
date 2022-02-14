@@ -61,3 +61,4 @@
 ;; - https://www.tutorialspoint.com/clojure/clojure_variables.htm
 ;; comunity documentation - https://clojuredocs.org/clojure.core/type
 ;; introduction to clojure and its purpuse https://www.youtube.com/watch?v=uwRFOFvd-CU&ab_channel=TensorProgramming
+;; operators, https://www.tutorialspoint.com/clojure/clojure_operators.htm

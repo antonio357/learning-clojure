@@ -46,3 +46,7 @@
 (== 1. '1.)
 
 ;; WARNNING: >== or <== does not exists in clojure
+
+;; not is the inverse operator, ! does not works
+(not false)
+(! false) ;; does not execute
