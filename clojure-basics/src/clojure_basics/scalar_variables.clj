@@ -23,18 +23,23 @@
 (def aLong 1000000000)
 (type aLong)
 (println aLong)
-(def aFloat 1.)
-(type aFloat)
-(println aFloat)
+(def aDouble 1.)
+(type aDouble)
+(println aDouble)
 ;; alphanumeric
+;; to declarate a char use \ 
 (def aChar \c)
 (type aChar)
 (println aChar)
-;; in clojure use " to create Strings not ' as it defnines symbol type
+;; in clojure use " to create Strings not ' as it defines symbol type
 (def aString "string")
 (type aString)
 (println aString)
 (def aSymbol 's)
 (type aSymbol)
 (println aSymbol)
+;; null
+(def null nil)
+(type null)
+(println null)
 
