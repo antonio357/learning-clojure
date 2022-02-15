@@ -48,5 +48,7 @@
 ;; WARNNING: >== or <== does not exists in clojure
 
 ;; not is the inverse operator, ! does not works
-(not false)
+(not = 'a 'b) ;; does not works
+(not= 'a 'b)
+(not (= 'a 'b))
 (! false) ;; does not execute
