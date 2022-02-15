@@ -28,17 +28,6 @@
 (if println true false)
 (if (Object.) true false)
 
-;; when its just like if but the else is always empity
-;; (when conditional-expression if-true-action)
-(when true true)
-;; if u use more then one action it will execute all actions but will but the return will be only the last action
-(when (== 1 1) (println "action 1"))
-(when (== 1 1) (println "action 1") (println "action 2"))
-(when (== 1 1) (println "action 1") (println "action 2") true)
-
-;; do can be used to create same efect from when but using if
-(if (== 1 1) (do (println "do action 1") (println "do action 2") true))
-
 ;; using case the default-action if not written it returns nil
 ;; case will only execute the first action and exit
 ;; (case variable-name
@@ -50,19 +39,36 @@
 ;; by default the operation used in case is the = operator
 (case variable
   1. false
-  1 true
-)
+  1 true)
 ;; using the default-action
 (def variable2 2)
 (case variable2
   1. false
   1 false
-  true
-)
+  true)
 
 ;; cond like case but allow to use any operations besides =
 ;; case will only execute the first action and exit
 (cond
   (> 2 1) "action 1"
-  (= 1 1) "action 2"
-)
+  (= 1 1) "action 2")
+
+;; do usage in cond
+(cond
+  (> 2 1) ((println "ok") (println "ok"))
+  (= 1 1) "action 2")
+
+;; when its just like if but the else is always empity
+;; (when conditional-expression if-true-action)
+(when true true)
+;; if u use more then one action it will execute all actions but will but the return will be only the last action
+(when (== 1 1) (println "action 1"))
+(when (== 1 1) (println "action 1") (println "action 2"))
+(when (== 1 1) (println "action 1") (println "action 2") true)
+
+;; WARNNING most conditional operators allow to execute only a sigle instruction, to execute a set of instructions wrap all the instructions with (do instructions)
+
+;; all if-actions has to be a simgle instruction 
+(if (== 1 1) ((println "do action 1") (println "do action 2") true)) ;; this code does not works
+;; do can be used to create same efect from when but using if and allowing to execute more then a single instruction
+(if (== 1 1) (do (println "do action 1") (println "do action 2") true))
