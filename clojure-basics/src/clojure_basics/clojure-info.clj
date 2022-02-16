@@ -63,3 +63,5 @@
 ;; introduction to clojure and its purpuse https://www.youtube.com/watch?v=uwRFOFvd-CU&ab_channel=TensorProgramming
 ;; operators, https://www.tutorialspoint.com/clojure/clojure_operators.htm
 ;; clojure cheatssheet, https://clojure.org/api/cheatsheet
+;; data structs, https://purelyfunctional.tv/guide/clojure-collections/
+;; data structs and its operations, http://clojure-doc.org/articles/language/collections_and_sequences.html
