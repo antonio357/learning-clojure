@@ -1,7 +1,19 @@
-# learning-clojure
+# learning-clojure <br>
 This repo its meant to save exemples and explanations about programming in clojure.  
 Disclaimer: All done in Ubuntu based distribution
-## setting up clojure enviroment
+# summary <br>
+- scalar variables  
+- collections  
+- aritmetic operators  
+- relational operators  
+- logical operators  
+- conditional operators
+- functions  
+- built-in functions and utils  
+- loops  
+- parallelism  
+# setting up clojure enviroment <br>
+
 > install `brew`, `vscode` and `JDK with JAVA_HOME` 
 
 > in a terminal run `brew install clojure lein`  
@@ -38,7 +50,7 @@ and <a href="https://marketplace.visualstudio.com/items?itemName=betterthantomor
   "when": "calva:connected && editorTextFocus && editorLangId == 'clojure'"  
 }  
 </pre>
-## how to quickly test clojure code
+# how to quickly test clojure code <br>
 > in a terminal run `lein new my-cloruje-project`  
 
 > open `my-cloruje-project` with vscode  
