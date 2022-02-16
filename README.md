@@ -1,17 +1,36 @@
 # learning-clojure <br>
 This repo its meant to save exemples and explanations about programming in clojure.  
-Disclaimer: All done in Ubuntu based distribution
+Disclaimer: All done in Ubuntu based distribution  
 # summary <br>
 - scalar variables  
 - collections  
+- keywords and symbols   
 - aritmetic operators  
 - relational operators  
 - logical operators  
-- conditional operators
+- conditional operators  
 - functions  
 - built-in functions and utils  
 - loops  
+- scope  
 - parallelism  
+# classes <br>
+- first class
+  - -> operator
+  - \# operator
+  - % %1 %3
+  - comment
+  - map objects
+  - functions map reduce filter some
+  - destructing
+  - importação
+  - scopo let, restrição de acessos 
+  - utilizar funções java dentro do código clojure, com noitação de .
+  - namespace
+  - lazy things
+  - syn4tdf-reports
+  - issue 6391
+  - projeto https://git.synchro.com.br/componentes/syn4tdf-report
 # setting up clojure enviroment <br>
 
 > install `brew`, `vscode` and `JDK with JAVA_HOME` 
