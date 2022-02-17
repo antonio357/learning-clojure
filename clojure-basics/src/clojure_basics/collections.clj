@@ -48,22 +48,38 @@ listD
 (type mapB)
 (type mapC)
 
-;; set
+;; set use the literal #, if you do not use # it will return a map
 (type {1 2})
-(def setA {1 2})
+(type #{1 2})
+(def setA #{1 2})
 (set? setA)
 setA
-(def setB {1 2 1}) ;; repeated elements thorws exeptions
+(def setB #{1 2 1}) ;; repeated elements thorws exeptions
 
-;; sequences
+;; sequences, are a type of collection that can be created from any collection type, and its purpuse is to get a sequencial view of a data struct
+(seq [])
+(seq [1 2 3])
+(def seqA [1 2 3])
+(type seqA)
+(type (seq '(1 2 3)))
 
 ;; sorted collections
 
 ;; basics operations with collections
 
 ;; add
+;; conj can add elements to a collection but does not especify order it depends on the collections, it uses the most effiienty way to add te element in the given collection, so if it's a list it will add in the begininig if is a vector it will add at the end
+(conj [1 2 3] 4 5)
+(conj (list 1 2 3) 0)
+(conj {:e1 1 :e2 2} [:e3 3])
+(conj #{1 2} 3)
 
 ;; remove
+;; use pop for lists and vectors
+(pop [1 2 3]) ;; removes from the end
+(pop (list 1 2 3)) ;; removes from the beginning
+(disj )
+
 
 ;; update
 
