@@ -4,6 +4,10 @@
 ;  conj to create a new collection with the new itens
 ;  seq to iterate thtough the collection
 
+; to check if something is a collection use the coll? functions
+(coll? 1)
+(coll? [1 2])
+
 ;  vectors
 [1 2 3 4]
 (vector 1 2 3 4)
@@ -73,6 +77,11 @@ setA
 (conj (list 1 2 3) 0)
 (conj {:e1 1 :e2 2} [:e3 3])
 (conj #{1 2} 3 4)
+; cons adds elements to the beginning but also converts the collection to a list, cons element collection
+(cons 1 [2 3])
+(cons 1 '(2 3))
+(cons 1 #{2 3})
+(cons [:1 1] {:2 2 :3 3})
 ;  for vectors and maps use assoc, assoc collection index value
 ;  assoc can update or add
 ;  in vectors assoc will add at the end of the vector only any other index it will update the value
@@ -100,6 +109,7 @@ setA
 ;  access/get element
 
 
+; built-in functions to collections
 ;  map, filter, remove, take, and drop
 ;  count conj empty? seq
 ;  first rest next 
@@ -107,5 +117,12 @@ setA
 (first mapA)
 (last mapA)
 (count mapA)
+; concat concatenate collections but return a list
+(concat [1 2] [3 4])
+(concat '(1 2) '(3 4))
+(concat #{1 2} #{3 4})
+(concat {:1 1 :2 2} {:3 3 :4 4})
+(concat [1 2] #{1 2})
+(concat {:1 1 :2 2} [3 4])
 
-;  goes for nuilt in functions
+
