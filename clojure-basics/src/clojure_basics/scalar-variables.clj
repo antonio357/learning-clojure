@@ -1,19 +1,19 @@
-;; clojure is dynamic typed
-;; variables, clojure does not realy have variables since this variables are immutable, 
-;; to change the value of a "variable" it will destry the viariable and create a new one with the new value
-;; variables here are more like value bound to a memory piece
+;  clojure is dynamic typed
+;  variables, clojure does not realy have variables since this variables are immutable, 
+;  to change the value of a "variable" it will destry the viariable and create a new one with the new value
+;  variables here are more like value bound to a memory piece
 
-;; to create a variable use def keyword
-;; (def variable-name value)
+;  to create a variable use def keyword
+;  (def variable-name value)
 (def variable "value")
 (println variable)
 
-;; scalar variables types
-;; boolean
+;  scalar variables types
+;  boolean
 (def aBoolean true)
 (type aBoolean)
 (println aBoolean)
-;; numeric
+;  numeric
 (def aShort 1)
 (type aShort)
 (println aShort)
@@ -26,19 +26,19 @@
 (def aDouble 1.)
 (type aDouble)
 (println aDouble)
-;; alphanumeric
-;; to declarate a char use \ 
+;  alphanumeric
+;  to declarate a char use \ 
 (def aChar \c)
 (type aChar)
 (println aChar)
-;; in clojure use " to create Strings not ' as it defines symbol type
+;  in clojure use " to create Strings not ' as it defines symbol type
 (def aString "string")
 (type aString)
 (println aString)
 (def aSymbol 's)
 (type aSymbol)
 (println aSymbol)
-;; null
+;  null
 (def null nil)
 (type null)
 (println null)
