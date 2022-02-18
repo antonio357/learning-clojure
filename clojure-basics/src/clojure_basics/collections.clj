@@ -72,18 +72,33 @@ setA
 (conj [1 2 3] 4 5)
 (conj (list 1 2 3) 0)
 (conj {:e1 1 :e2 2} [:e3 3])
-(conj #{1 2} 3)
+(conj #{1 2} 3 4)
+;; for vectors and maps use assoc, assoc collection index value
+;; assoc can update or add
+;; in vectors assoc will add at the end of the vector only any other index it will update the value
+(assoc [1 2] 2 3) ;; it will add 3
+(assoc [2 3] 0 1) ;; it will update the value in index 0
+(assoc [1 3] 1 2) ;; it will update the value in index 1
+(assoc {:1 1 :2 2} :3 3)
 
 ;; remove
-;; use pop for lists and vectors
+;; lists and vectors use pop or remove
 (pop [1 2 3]) ;; removes from the end
 (pop (list 1 2 3)) ;; removes from the beginning
-(disj )
+;; remove, receves a function that will return true for the elements that are to be removed from the collection and false to the elements that are to stay in the collection
+(remove neg? #{-1 2 3})
+(remove pos? [-1 -2 3])
+;; for sets use disj
+(disj #{1 2 3} 1 2)
+;; for maps use dissoc
+(dissoc {:1 1 :2 2 :3 3} :1 1 :2 2)
+(dissoc {:1 1 :2 2 :3 3} :1 :2)
 
 
 ;; update
 
-;; get
+;; access/get element
+
 
 ;; map, filter, remove, take, and drop
 ;; count conj empty? seq
