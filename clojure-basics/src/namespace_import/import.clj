@@ -4,13 +4,13 @@
 (namespace1-func)
 namespace1Map
 (namespace1-can-not-be-imported)
--namespace1Map-can-not-be-imported
+namespace1Map-private
 
 ; with :only, imports certain things from namespace2.clj
 (use '[namespace-import.namespace2 :only [namespace2-func namespace2Map]])
 (namespace2-func)
 namespace2Map
-;; (namespace2-not-imported-func)
+(namespace2-not-imported-func)
 
 ; with :exclude, imports all things from namespace3.clj exept what is in exclude
 (use '[namespace-import.namespace3 :exclude [namespace3-func namespace3Map]])
