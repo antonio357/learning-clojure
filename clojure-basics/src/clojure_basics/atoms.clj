@@ -25,3 +25,15 @@
 (def myAtom (atom 1 :validator pos?))
 @myAtom
 (reset! myAtom -1) ; every time it tries to change the value of the atom it will only allow if the validator return true
+
+; swap! with collections, the fucntion has to return the new collection version
+(def mapAtom (atom {:a "a" :b "b"}))
+@mapAtom
+(type mapAtom)
+(type @mapAtom)
+(reset! mapAtom {:a "b" :b "a"})
+@mapAtom
+(defn correctMap [mapAtom key value] (assoc mapAtom key value))
+(swap! mapAtom correctMap :a "a")
+(swap! mapAtom correctMap :b "b")
+@mapAtom
