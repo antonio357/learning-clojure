@@ -36,3 +36,14 @@
 (for [i (range 1 4)]
   (println i)
 )
+
+(def mapA {:a \a :b \b :c \c})
+(for [k mapA]
+  (println k)
+)
+(for [k mapA]
+  (println (k 1))
+)
+(for [k mapA]
+  (println (val k))
+)
