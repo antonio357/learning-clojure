@@ -32,3 +32,7 @@
 (for [i [0 1] x [0 1]]
   (println i x)
 )
+; range interval goes as [a b[, a >= and < b, from a to b - 1
+(for [i (range 1 4)]
+  (println i)
+)
