@@ -103,12 +103,6 @@ setA
 (dissoc {:1 1 :2 2 :3 3} :1 1 :2 2)
 (dissoc {:1 1 :2 2 :3 3} :1 :2)
 
-
-;  update
-
-;  access/get element
-
-
 ; built-in functions to collections
 ;  map, filter, remove, take, and drop
 ;  count conj empty? seq
@@ -124,5 +118,14 @@ setA
 (concat {:1 1 :2 2} {:3 3 :4 4})
 (concat [1 2] #{1 2})
 (concat {:1 1 :2 2} [3 4])
-
-
+; to check if a collection is empty?
+(empty? [])
+(empty? [[]]) ; returns false
+(empty? '())
+(empty? #{})
+(empty? #{#{}}) ; returns false
+(empty? {})
+; create a collection from another collection with into
+(into [] '(1 2 3))
+(into '() [1 2 3])
+(into #{1 2 3} #{4 5 6})
