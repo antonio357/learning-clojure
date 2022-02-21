@@ -1,3 +1,5 @@
 # ignore output files
 **/.calva/output-window/
 **.cache**
+
+.clj-kondo/.cache/v1/clj/user.transit.json
