@@ -43,3 +43,5 @@
 (type null)
 (println null)
 
+; you can use class to see the type of the variable as well
+(class 1)
