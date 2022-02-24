@@ -77,6 +77,7 @@ setA
 (conj (list 1 2 3) 0)
 (conj {:e1 1 :e2 2} [:e3 3])
 (conj #{1 2} 3 4)
+(conj {:1 1 :2 2} :3 3) ; does not works
 ; cons adds elements to the beginning but also converts the collection to a list, cons element collection
 (cons 1 [2 3])
 (cons 1 '(2 3))
