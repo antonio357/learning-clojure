@@ -26,7 +26,7 @@
 )
 (print-full-name personName)
 
-; with threading macro the
+; with threading macro
 (defn print-full-name-with-thread-macro [personName]
   (-> 
     (concat-print (personName :firstName) (personName :secondName))
