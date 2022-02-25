@@ -17,11 +17,15 @@
 (def global-b "global b")
 
 ; function local scope, now loca-b and local-c are actually local just like the parameters
-; (let [local-bind value] action-that-access-to-the-local-binds)
+; (let [local-bind value] action-that-can-access-to-the-local-binds)
 (defn func-b [param]
   (let [local-b "func local b" local-c "func local c"]
     (println (str local-b global-b param))
-    (println local-c)))
+    (println local-c))) ; it works
+(defn func-c [param]
+  (let [local-b "func local b" local-c "func local c"]
+    (println (str local-b global-b param)))
+    (println local-c)) ; it does not works because let binds only exits inside its let () defn is not creating a scope only let is creating a scope
 
 
 (println global-b) ; works
