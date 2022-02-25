@@ -31,3 +31,16 @@
 
 ;  in anonymous functions we use recur since we hava no name to call
 ((fn [num] (if (> num 2) (recur (/ num 2)) (if (== num 2) true false))) 8)
+
+; working with parameters
+
+; apply, it gets the values of a collection and pass it as the arguments of a function
+(+ [1 2 3 4 5]) ; does not works
+(apply + [1 2 3 4 5 6]) ; now it works
+
+; &, its an operator that can be used to define a parameter that receives an infinite amout of arguments, cause it reads its arguments as if a list
+(defn my-print [& args] (map println args))
+(my-print)
+(my-print 1 2 3 4)
+(defn my-print [hello & args] (println hello args))
+(my-print "hello" 1 2 3 4)
