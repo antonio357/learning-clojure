@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Leiningen: cljsjs/vega-lite:5.1.1-0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/cljsjs/vega-lite/5.1.1-0/vega-lite-5.1.1-0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
