@@ -53,3 +53,19 @@
 ; return :character-name screen-time
 (defn- get-character-screen-time [character, episodes]
   (map [] episodes))
+
+
+
+; epsode -> secence (filter the scenes with the character) -> get the screen-time from each scene filtered
+; for each character, recursive passing the character map in each character will begin with nil as screen-time
+; for each episode
+; function to filter the scenes with the character
+; function to reduce the scenes vector to a number which will be the screen-time
+; having the screen-time of each episode that has the character, the episodes that did not have the character will have 0 screen-time
+; now sum all the screen-time
+; now having the whole character screen-time, return the new character map with assoc the hole screen-time
+(defn get-character-scenes [scenes, character]
+  (map #((as-> (get-characters-from-scene %) bind
+             (contains? bind character)
+             (get-time-interval (:sceneStart scene) (:sceneEnd scene)))) scenes))
+
