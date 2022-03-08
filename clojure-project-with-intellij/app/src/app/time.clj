@@ -13,4 +13,4 @@
 (defn get-time-interval [time-stamp-begin time-stamp-end]
   (let [time-stamp-begin (parse-seconds time-stamp-begin) time-stamp-end (parse-seconds time-stamp-end)]
     (as-> (- time-stamp-end time-stamp-begin) interval
-        (if (< interval 0) (* interval -1) interval))))
+          (if (< interval 0) (* interval -1) interval))))

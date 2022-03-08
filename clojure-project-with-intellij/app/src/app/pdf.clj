@@ -19,18 +19,14 @@
    [:line]]
   (get-dir "doc"))
 
-(def a (list [] []))
-(prn a)
-
-
 (pdf
   [{}
    [:chart
-    {:type "bar-chart"
-     :title "Bar Chart"
-     ;:background [10 100 40]
-     :x-label "Items"
-     :y-label "Quality"}
-    [2 "Foo"] [4 "Bar"] [10 "Baz" ]]]
+    {:type       "bar-chart"
+     :title      "Bar Chart"
+     :background [10 100 40]
+     :x-label    "Items"
+     :y-label    "Quality"}
+    [2 "Foo"] [4 "Bar"] [10 "Baz"]]]
   (get-dir "doc"))
 

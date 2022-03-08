@@ -6,11 +6,10 @@
 
 (let [cljspec spec
       udata (cljspec :usermeta)
-      default-frame {:top [], :bottom [],
-                     :left [[box :size "0px" :child ""]],
+      default-frame {:top   [], :bottom [],
+                     :left  [[box :size "0px" :child ""]],
                      :right [[box :size "0px" :child ""]]}]
   (cond
-    ...
     (udata :slider)
     (let [sval (rgt/atom "0.0")]
       (printchan :SLIDER-INSTRUMENTOR)
