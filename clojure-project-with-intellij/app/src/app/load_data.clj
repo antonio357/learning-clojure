@@ -1,4 +1,4 @@
-(ns app.getData
+(ns app.load_data
   (:require [clojure.string :as str])
   (:require [clojure.data.json :as json]))
 

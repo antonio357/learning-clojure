@@ -1,5 +1,5 @@
 (ns app.get-screen-time
-  (:require [app.getData :refer [get-data]])
+  (:require [app.load_data :refer [get-data]])
   (:require [app.time :refer [get-time-interval]]))
 
 (defn print-screen-time [screen-time]
