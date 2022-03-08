@@ -260,10 +260,10 @@
 
 
 ; now it works the problem was the internal maps returned empty collections with just nil inside so clojure interpred as lazy sqe and it woul only execute code that returns lazy seq if it will use the values
-(defn get-screen-time [db]
+(defn get-screen-time [db atom-map]
   (->> (get-episodes db)
        (map (fn [episode] (doall (as-> (:scenes episode) scenes
-                                       (map (fn [scene] (let [screen-time (atom 0) characters (atom []) atom-map (atom {})]
+                                       (map (fn [scene] (let [screen-time (atom 0) characters (atom [])]
                                                           (get-time-interval (:sceneStart scene) (:sceneEnd scene))
                                                           (reset! screen-time (get-time-interval (:sceneStart scene) (:sceneEnd scene)))
                                                           (reset! characters (get-characters-from-scene scene))
@@ -272,5 +272,8 @@
                                                                                    (swap! atom-map #(assoc % character (+ (character %) @screen-time)))
                                                                                    (swap! atom-map #(assoc % character @screen-time))))) @characters))) scenes)))))))
 
-(def here (get-screen-time db))
-(prn here)
+(def screen-time (atom {}))
+(get-screen-time db screen-time)
+(defn print-screen-time [screen-time]
+  (map #(prn % (% screen-time)) (keys screen-time)))
+(print-screen-time @screen-time)
