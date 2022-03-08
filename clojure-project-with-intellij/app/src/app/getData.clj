@@ -4,17 +4,18 @@
 
 
 (def ^:private urls {
-                     :github "https://github.com/jeffreylancaster/game-of-thrones/tree/master/data"
+                     :github         "https://github.com/jeffreylancaster/game-of-thrones/tree/master/data"
                      :github-content "https://raw.githubusercontent.com/jeffreylancaster/game-of-thrones/master/data/"})
 
 
 (defn- get-data-links [urls]
-  (as-> (:github urls) variable ; gets url
-        (slurp variable) ; page request
-        (re-seq #"data/.*.json\">" variable) ; get the links
+  (as-> (:github urls) variable                             ; gets url
+        (slurp variable)                                    ; page request
+        (re-seq #"data/.*.json\">" variable)                ; get the links
         (map (fn [string] (str/replace string #"data/|.json\">" "")) variable) ; get only the content string
-        [(map keyword variable) variable] ; [[keys] [values]]
-        (zipmap (variable 0) (variable 1)))) ; map from [keys] [values]
+        [(map keyword variable) variable]                   ; [[keys] [values]]
+        (zipmap (variable 0) (variable 1))))                ; map from [keys] [values]
+
 
 (defn- get-db [data-links]
   (as-> (keys data-links) arg
